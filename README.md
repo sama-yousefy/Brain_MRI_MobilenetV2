@@ -43,3 +43,75 @@ The original ImageNet classification head was removed using:
 
 ```python
 include_top=False
+## Custom Classification Head
+
+After removing the original ImageNet classification layer, a custom classification head was added for three-class brain tumor classification.
+
+The architecture includes:
+
+- GlobalAveragePooling2D
+- Dropout with a rate of 0.3
+- Dense layer with Softmax activation
+
+## Training Configuration
+
+| Parameter | Value |
+|---|---|
+| Image Size | 224 × 224 |
+| Batch Size | 32 |
+| Epochs | 10 |
+| Number of Classes | 3 |
+| Optimizer | Adam |
+| Loss Function | Categorical Crossentropy |
+
+## Results
+
+### Test Accuracy
+
+94.55%
+
+### Classification Report
+
+| Class | Precision | Recall | F1-Score |
+|---|---:|---:|---:|
+| Glioma | 99% | 95% | 97% |
+| Meningioma | 93% | 91% | 92% |
+| Other Tumor | 93% | 98% | 95% |
+
+The model achieved relatively balanced performance across the three classes.
+
+Glioma achieved the highest F1-Score, while Meningioma showed slightly lower recall compared with the other classes.
+
+## Confusion Matrix
+
+The confusion matrix evaluates the performance of the model across the three tumor categories.
+
+Most predictions were correctly classified along the diagonal of the matrix.
+
+The main classification errors occurred between Meningioma and Other Tumor.
+
+## Training Analysis
+
+The training curves show that the model gradually improved during training.
+
+Both training and validation accuracy increased, while training and validation loss generally decreased.
+
+The relatively small gap between training and validation performance suggests that the model did not show severe overfitting during the 10 training epochs.
+
+## Future Improvements
+
+- Data augmentation
+- Fine-tuning selected MobileNetV2 layers
+- Hyperparameter tuning
+- Cross-validation
+- ROC-AUC analysis
+- Model deployment as a mobile or web application
+
+## Project Structure
+
+```text
+brain-mri-mobilenetv2/
+│
+├── brain-mri-mobilenetv2.ipynb
+├── README.md
+└── requirements.txt
