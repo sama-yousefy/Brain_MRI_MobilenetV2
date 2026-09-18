@@ -100,25 +100,29 @@ The relatively small gap between training and validation performance suggests th
 
 ## Future Improvements
 
+- Fine-tuning the MobileNetV2 base model
 - Data augmentation
-- Fine-tuning selected MobileNetV2 layers
-- Hyperparameter tuning
-- Cross-validation
-- ROC-AUC analysis
-- Model deployment as a mobile or web application
+- Comparing with other CNN architectures
+- Improving model generalization
 
-## Project Structure
+## Project Results
 
-```text
-brain-mri-mobilenetv2/
-│
-├── brain-mri-mobilenetv2.ipynb
-├── README.md
-└── requirements.txt
-### خیلی مهم
-آخر متن README باید این باشد:
+### Training History
 
-```markdown
+![Training History](images/training_history.png)
+
+### Confusion Matrix
+
+![Confusion Matrix](images/confusion_matrix.png)
+
+### Classification Report
+
+![Classification Report](images/classification_report.png)
+
+## Disclaimer
+
+This project is for educational and research purposes only and is not intended for medical diagnosis.
+
 ## Author
 
 Sama Yousefy
