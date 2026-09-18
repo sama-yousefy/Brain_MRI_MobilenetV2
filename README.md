@@ -105,20 +105,6 @@ The relatively small gap between training and validation performance suggests th
 - Comparing with other CNN architectures
 - Improving model generalization
 
-## Project Results
-
-### Training History
-
-![Training History](./images/training_history.png)
-
-### Confusion Matrix
-
-![Confusion Matrix](./images/confusion_matrix.png)
-
-### Classification Report
-
-![Classification Report](./images/classification_report.png)
-
 ## Disclaimer
 
 This project is for educational and research purposes only and is not intended for medical diagnosis.
