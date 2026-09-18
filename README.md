@@ -109,15 +109,15 @@ The relatively small gap between training and validation performance suggests th
 
 ### Training History
 
-![Training History](images/training_history.png)
+![Training History](./images/training_history.png)
 
 ### Confusion Matrix
 
-![Confusion Matrix](images/confusion_matrix.png)
+![Confusion Matrix](./images/confusion_matrix.png)
 
 ### Classification Report
 
-![Classification Report](images/classification_report.png)
+![Classification Report](./images/classification_report.png)
 
 ## Disclaimer
 
