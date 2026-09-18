@@ -115,3 +115,10 @@ brain-mri-mobilenetv2/
 ├── brain-mri-mobilenetv2.ipynb
 ├── README.md
 └── requirements.txt
+### خیلی مهم
+آخر متن README باید این باشد:
+
+```markdown
+## Author
+
+Sama Yousefy
